@@ -1,67 +1,137 @@
-/*Add padding and margin to space out the page.
-Make the font larger too.*/
 body{
-	margin:1%;
-	font-size:125%;
+	padding: 0px;
+	background-color: #f0ebf4;
+    font-family: Verdana;
+    line-height: 2;
+	font-size: 95%;
 }
 
-/*Make the h1 heading bigger with a bold font*/
-h1{
-	font-size: 2em; 
-	font-weight: bold;
+.navbar {
+    overflow: hidden;
+    background-color: #a1c3d1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: right;
+    display: block;
+    color: #2f4454;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .navbar a:hover {
+    background: #2f4454;
+    color:#f0ebf4;
+  }
+
+  .navbar:focus {
+    background:#f0ebf4;
+    color:#2f4454 ;
+  }
+
+  .websitename{
+    font-size: 25px;
+    font-weight: bold;
+    background: #a1c3d1;
+  }
+  .websitename a:hover {
+    background:#a1c3d1 ;
+  }
+
+h1 {
+    color:rgb(52, 11, 105);
+    font-size: 20px;
+    padding:0px;
 }
 
-.active{
-	background: white;
-    text-transform: uppercase;
-	text-align: center;
+h2 {
+    padding:0px;
+    font-size: 18px;
 }
 
-.active a{
-	text-decoration: none;;
-}
-
-/*Style the images*/
-img{
-    height: 150px;
-	width:auto;
-    border: 3px solid blue;
-    padding: 25px;
-    border-radius: 20px;
-    margin: 5px;
-	margin-left: 10%
-}
-
-/*Make the h2 heading match h1*/
-h2{
-	font-size: 2em; 
-	font-weight: bold;
-}
-
-/*Improve the spacing for paragraphs AND headings*/
-p, h1, h2 {
-    padding: 10px;
-}
-
-/*Add borders around the main components and some
-space too*/
-header, nav, main, footer{
-	border: 3px solid red;
-	margin: 10px 0;
+.p1 {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    color:#2f4454;
+    text-align: justify;
 }
 
 
-/*Change the styling for all of the list 
-items in the nav section*/
-nav ul li{
-	background-color: #ECFF4D;
-	padding:10px;
-	width:25%;
-	border:1px solid black;
-	display: inline-block;
-	width: 20%;
+.index image{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+footer{
+    text-align: center;
+    font-size: 10px;
+}
+footer p{
+    padding-left: 25px;
+    padding-right: 25px;
+   
+    color:#2f4454;
 }
 
-/*Added this so the links stay the same color*/
-a:visited{color:#0000FF}
+.footerbutton {
+    background-color: #2f4454;
+    opacity: 80%;
+    border: none;
+    color: white;
+    padding-left: 18px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    border-radius: 50%;
+}
 
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 200px;
+    max-height: 500px;
+    padding-bottom: 10px;
+    background-color:#2f4454;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    
+  }
+
+  .content {
+    padding-left: 20px;
+    padding-right: 190px;
+    color: #2f4454;
+    text-align: justify;
+    line-height: 2;
+  }
+
+  .skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip:focus {
+    padding-top: 100px;
+    position: static;
+    width: auto;
+    height: auto;
+  }
